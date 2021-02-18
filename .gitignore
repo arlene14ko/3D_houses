@@ -1,2 +1,7 @@
 .gitignore
+gitignore.txt
 data/
+.ipynb_checkpoints
+Earthpy.ipynb
+colorado-flood.py
+workflow.txt
