@@ -4,7 +4,7 @@ from urllib.request import urlopen
 from zipfile import ZipFile
 import rasterio as rt
 from rasterio.mask import mask
-
+import shutil
 
 class GeoTiff:
     
@@ -18,7 +18,7 @@ class GeoTiff:
                         if bbox['Top (Y)'][i] >= y:
                             i = i
                             break                
-        if i < 9 :
+        if i < 9:
             num = f'k0{i+1}'
         else:
             num = f'k{i+1}' 
@@ -34,16 +34,17 @@ class GeoTiff:
                 print(f"Downloading the {key} zip file......")
                 with ZipFile(BytesIO(zipresp.read())) as zfile:
                     print(f"Extracting the {key} zip file .......")
-                    zfile.extractall(f'./data/raster-files/{key}')
-                    print(f"Done extracting the {key} zip file to raster-files/{key} folder!")
+                    zfile.extractall(f'./data/temp-raster/{key}')
+                    print(f"Done extracting the {key} zip file to temp-raster/{key} folder!")
         
         return("Successfully extracted the tiff files!")
     
     
     def mask_tiff(num, polygon):
-        raster_files = {'DSM' : f"./data/raster-files/DSM/GeoTiff/DHMVIIDSMRAS1m_{num}.tif",
-                        'DTM' : f"./data/raster-files/DTM/GeoTiff/DHMVIIDTMRAS1m_{num}.tif"}
-        
+        print("Mask tiff function")
+        raster_files = {'DSM' : f"./data/temp-raster/DSM/GeoTiff/DHMVIIDSMRAS1m_{num}.tif",
+                        'DTM' : f"./data/temp-raster/DTM/GeoTiff/DHMVIIDTMRAS1m_{num}.tif"}
+        masked_files = {}
         for name, file in raster_files.items():
             data = rt.open(file)
             out_img, out_transform = mask(dataset=data, shapes=[polygon], crop=True)
@@ -55,16 +56,29 @@ class GeoTiff:
                          "transform": out_transform,
                          "crs": epsg_code
                         })
-        masked_files = {}
-        with rt.open(f"./data/{name}_masked.tif", "w", **out_meta) as dest:
-            dest.write(out_img)
-            masked_files[{name}] = f"./data/{name}_masked.tif"
-    
+
+            with rt.open(f"./data/masked-files/{name}_masked.tif", "w", **out_meta) as dest:
+                dest.write(out_img)
+                print("writing to a new masked tiff")
+                masked_files[f'{name}'] = f"./data/masked-files/{name}_masked.tif"
+                print("created the masked files")
+                shutil.rmtree(f"./data/temp-raster/{name}", ignore_errors=True)
+                print(f"deleted the files inside the temp-raster folder for {name}")
+
+
         return masked_files
             
     
-    def get_chm():
-        pass
+    def get_chm(masked_files):
+        dsm_tiff = rt.open(masked_files['DSM'])
+        dsm_array = dsm_tiff.read(1)
+
+        dtm_tiff = rt.open(masked_files['DTM'])
+        dtm_array = dtm_tiff.read(1)
+
+        chm = dsm_array - dtm_array
+
+        return chm
             
             
             

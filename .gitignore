@@ -1,4 +1,5 @@
 .gitignore
-data/
+data/raster-files/
+data/temp-raster/
 .ipynb_checkpoints
 .gitignore
