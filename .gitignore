@@ -1,10 +1,4 @@
 .gitignore
 data/
 .ipynb_checkpoints
-Earthpy.ipynb
-colorado-flood
-workflow.txt
-3D_houses.py
-canope-height-model.ipynb
-program.py
 .gitignore

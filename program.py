@@ -1,14 +1,12 @@
-from osgeo import gdal
-import numpy as np
-import matplotlib.pyplot as plt
+from utils.api import API
+from utils.geotiff import GeoTiff
 
+address = input("Enter the Belgium address: ") 
 
-dsm_ds = gdal.Open("data\DSM_07\DSM_07.tif")
-dsm_gt = dsm_ds.GetGeoTransform()
-dsm_proj = dsm_ds.GetProjection()
+x, y = API.get_coordinates(address)
 
-dsm_band = dsm_ds.GetRasterBand(1)
-dsm_array = dsm_band.ReadAsArray()
+num = GeoTiff.check_tiff(x, y)
 
-plt.figure()
-plt.imshow(dsm_array)
+polygon = API.get_polygon(address)
+
+mask = GeoTiff.mask_tiff(num, polygon)
