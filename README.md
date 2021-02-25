@@ -33,6 +33,9 @@ This is a project about searching an address in Belgium and then it will return 
 
 Here is a sample 3D representation using the code in this repository. This is the Het Steen in Antwerp, Belgium. 
 
+![HetSteen3Drepresentation](data/3D-images/hetsteen.png)
+
+
 ### Definition
 
 ![DTM-DSM-CHM](data/DEM_DSM_CHM.png)
