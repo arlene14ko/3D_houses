@@ -23,37 +23,29 @@
 
 ## About the Repository
 
-This is a project about searching an address in Vlaanderen and then it will return a 3D representation of the address using the `LIDAR` method.
+This is a project about searching an address in Vlaanderen and then it will return a 3D representation of the address using the *LIDAR method.
 
-`Digital Surface Map (DSM)` and `Digital Terrain Map (DTM)` are already computed and available from www.geopunt.be. We just incorporated it to the python code to be able to plot a certain address and then get the 3D representation of that address.
+*Digital Surface Map (DSM) and Digital Terrain Map (DTM) are already computed and available from geopunt.be. We just incorporated it to code to be able to plot a certain address that you wanted to plot. 
 
-![HetSteen3Drepresentation](data/hetsteen.png)
+*`LIDAR` is a method to measure distance using light. The device will illuminate a target with a laser light and a sensor will measure the reflection. Differences in wavelenght and return times will be used to get the 3D representations of an area. 
 
-### Definitions
+*`Digital Surface Model (DSM)` includes ground surface, vegetation and man-made objects. DSM demonstrate the natural and artificial features on the Earth’s surface. DSM may be useful for RF planning, landscape modelling, city modelling, visualization applications and more.
 
-`LIDAR` is a method to measure distance using light. The device will illuminate a target with a laser light and a sensor will measure the reflection. Differences in wavelenght and return times will be used to get the 3D representations of an area. 
-
-`Digital Surface Model (DSM)` includes ground surface, vegetation and man-made objects. DSM demonstrate the natural and artificial features on the Earth’s surface. DSM may be useful for RF planning, landscape modelling, city modelling, visualization applications and more.
-
-`Digital Terrain Model (DTM)` is often required for flood or ground rupture modeling, land-use studies, geological analysis DSM demonstrate the natural and artificial features on the Earth’s surface.
+*`Digital Terrain Model (DTM)` is often required for flood or ground rupture modeling, land-use studies, geological analysis DSM demonstrate the natural and artificial features on the Earth’s surface.
 
 
-## Repository
- 
- This repository has 2 versions namely:
-
-### Python Notebook version
-- If you want to use the notebook version to run the code, all you need is the **3D_houses.ipynb** and the **data** folder to run the code.
-- To run the code, you need to input the address that you want and run all the cells to get a 3D representation of the address.
-
-### Python File version
-- If you want to use the python file version to run the code, you need the **program.py**, the **utils** folder and the **data** folder to run the code.
-- To run the code, you need to only run the `program.py` and enter the address that you want to get a 3D representation of the address.
-
+### Repository
 
 **README.md**
   - has all the necessary information regarding the project
 
+### Python Notebook version
+- If you want to use the notebook version to run the code, all you need is the `3D_houses.ipynb' and the `data` folder to run the code.
+- To run the code, you need to input the address that you want and run all the cells to get a 3D representation of the address.
+
+### Python File version
+- If you want to use the python file version to run the code, you need the `program.py`, the `utils` folder and the `data` folder to run the code.
+- To run the code, you need to only run the `program.py` and enter the address that you want to get a 3D representation of the address.
 
 
 **3D_houses.ipynb**
@@ -71,7 +63,7 @@ This is a project about searching an address in Vlaanderen and then it will retu
   - this has 2 files namely:
       1. **api.py**
           - this is where all the API requests are
-          - this is where we send the requests to the API to get the details of the address like the coordinates and the polygon
+	  - this is where we send the requests to the API to get the details of the address like the coordinates and the polygon
 
       2. **geotiff.py**
           - this contains all the functions regarding the geotiff files
@@ -99,7 +91,6 @@ This is a project about searching an address in Vlaanderen and then it will retu
   - If you wish to clone/fork this repository, you can just click on the repository, then click the Clone/fork button and follow the instructions.
 
 ## Pending...
- - The program takes too long to load because it is downloading the tiff file from the website, still trying to optimize that part of the code.
 
   
 ### Thank you for reading. Have fun!

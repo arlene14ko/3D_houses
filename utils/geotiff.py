@@ -67,7 +67,7 @@ class GeoTiff:
         print("Successfully extracted the tiff files!")
     
     
-    def mask_tiff(num: str, polygon: Dict[str,str]) -> Dict[str, str]:
+    def mask_tiff(num: str, polygon):
         """
         mask_tiff function will create the masked files for the DSM and DTM
         it requires the num and polygon as the parameter
@@ -90,7 +90,7 @@ class GeoTiff:
                          "height": out_img.shape[1],
                          "width": out_img.shape[2],
                          "transform": out_transform,
-                         "crs": epsg_code
+                         "crs": epsg_code,
                          "developer-name": "Arlene Postrado"
                         })
 
@@ -105,7 +105,7 @@ class GeoTiff:
         return masked_files
             
     
-    def get_chm(masked_files: Dict[str,str]):
+    def get_chm(masked_files):
         """
         get_chm function will get the CHM from the dsm and dtm
         It requires the masked_files as the parameter and returns the CHM

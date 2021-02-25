@@ -1,6 +1,5 @@
 #importing requests library to get the request from the API
 import requests
-from Typing import List, Dict
 
 
 class API:
@@ -12,7 +11,7 @@ class API:
     """
 
         
-    def get_details(address: List) -> Dict[str,str]:
+    def get_details(address):
         """
         get_details function requires the address as a parameter and then it will send a request to the API
             it will save the result as a dictionary named as address_info and return the dictionary address_info
@@ -36,7 +35,7 @@ class API:
         return address_info
 
 
-    def get_polygon(address_info: Dict[str,str]) -> Dict[str,str]:
+    def get_polygon(address_info):
         """
         get_polygon function requires the address_info as the parameter and then it will send a request to the API
             and it will save the result as a dictionary named polygon and return the polygon
