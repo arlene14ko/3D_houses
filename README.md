@@ -1,3 +1,4 @@
+______________________________________________________________________________________________________________________________________________________
 # 3D House Project
 
 - Developer Name : `Arlene Postrado`
@@ -21,17 +22,16 @@
 - Learn how to render a 3D plot
 - Learn how to present a final product
 
-## About the Repository
+
+______________________________________________________________________________________________________________________________________________________
+
+## About The Repository
 
 This is a project about searching an address in Belgium and then it will return a 3D representation of the address using the `LIDAR` method.
 
 `Digital Surface Map (DSM)` and `Digital Terrain Map (DTM)` are already computed and available from www.geopunt.be. We just incorporated it to code to be able to plot the certain address that you wanted to plot. 
 
-Here is a sample 3D representation using the code in this repository. This is the Het Steen in Antwerp, Belgium. 
-
-	Address: Steenplein 1, 2000 Antwerpen
-
-![HetSteen3Drepresentation](data/3D-images/hetsteen.png)
+Here is a sample 3D representation using the code in this repository. This is the Het Steen in Antwerp, Belgium. ![HetSteen3Drepresentation](data/3D-images/hetsteen.png)
 
 ### Definition
 
@@ -110,63 +110,65 @@ This repository has 2 versions, namely:
 
 ______________________________________________________________________________________________________________________________________________________
 
-## Libraries Used for this Project
+## Libraries Used For This Project
 
-**IO**
+**IO** https://docs.python.org/3/library/io.html
   - The io module provides Python’s main facilities for dealing with various types of I/O.  
   - In this project, BytesIO is used to put the Zip file in-memory binary objects.
 
 
- **Pandas**
+ **Pandas** https://pypi.org/project/pandas/
   - Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
 built on top of the Python programming language.
   - In this project, pandas is used to read the bbox.csv as a dataframe.
 
 
-**Plotly**
+**Plotly** https://plotly.com/python
   - Plotly allows users to import, copy and paste, or stream data to be analyzed and visualized.
   - In this project, plotly is used to successfully plot the 3D version of the address.
 
 
-**Rasterio**
+**Rasterio** https://rasterio.readthedocs.io/en/latest/api/rasterio.html
   - Rasterio reads and writes geospatial raster data. 
   - In this project, rasterio is used to read the raster files and rasterio.mask is also used to create the masked tiff files.
 
 
-**Requests**
+**Requests** https://requests.readthedocs.io/en/master/
   - Requests library is the de facto standard for making HTTP requests in Python. 
   - In this project, requests is used to make requests_get from an API to get the addresses' details
 
 
-**Shapely**
+**Shapely** https://pypi.org/project/Shapely/
   - Shapely is a BSD-licensed Python package for manipulation and analysis of planar geometric objects.
   - In this project, Polygon is imported from Shapely.geometry to get the geometry polygon of the address.
 
 
-**Shutil**
+**Shutil** https://docs.python.org/3/library/shutil.html
   - Shutil module offers a number of high-level operations on files and collections of files.
   - In this project, shutil is used to remove/delete the downloaded raster files to save memory and storage.
 
 
-**Time**
+**Time** https://docs.python.org/3/library/time.html
   - Time module handles time-related tasks.
   - In this project, time is used to calculate the total time the code runs.
 
 
-**Typing**
+**Typing** https://docs.python.org/3/library/typing.html
   - Typing defines a standard notation for Python function and variable type annotations.
   - In this project, typing is used to help document the code properly.
 
 
-**Urllib**
+**Urllib** https://docs.python.org/3/library/urllib.html
   - Urllib module is the URL handling module for python, it is used to fetch URLs (Uniform Resource Locators). 
   - In this project, urlopen function is used to fetch and read the URLs.
 
 
-**Zipfile**
+**Zipfile** https://docs.python.org/3/library/zipfile.html
   - The zipfile module can be used to manipulate ZIP archive files.
   - In this project, ZipFile is used to manipulate the DSM and DTM ZIP files.
 
+
+______________________________________________________________________________________________________________________________________________________
 
 ## Clone/Fork Repository
   - If you wish to clone/fork this repository, you can just click on the repository, then click the Clone/fork button and follow the instructions.
@@ -174,7 +176,9 @@ built on top of the Python programming language.
 ## Pending...
   - This code takes it's time to get the 3D representation because it is downloading the whole raster files. Currently figuring out a way to optimize it more. 
 
+
   
+![ThankYou](data/thankyou.gif) ![Bye](data/bye.gif)
 ### Thank you for reading. Have fun with the code!
 
 
