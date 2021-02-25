@@ -64,6 +64,9 @@ ________________________________________________________________________________
 **README.md**
   - has all the necessary information regarding the project
 
+**.gitignore**
+  - this contains a list of files that needs to be ignored in the github for example the raster files(DSM and DTM) because they are too big (some are more than 1GB), that way, we wont have any problem uploading the repository to Github
+
 **3D_houses.ipynb**
   - this is the notebook version of the code, if you wish to have only the notebook to run the code it is possible with this code.
   - all you need to do is to use this notebook and the data folder and the code will work and plot the 3D for you
