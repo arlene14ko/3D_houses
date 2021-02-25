@@ -1,3 +1,4 @@
+______________________________________________________________________________________________________________________________________________________
 # 3D House Project
 
 - Developer Name : `Arlene Postrado`
@@ -21,7 +22,10 @@
 - Learn how to render a 3D plot
 - Learn how to present a final product
 
-## About the Repository
+
+______________________________________________________________________________________________________________________________________________________
+
+## About The Repository
 
 This is a project about searching an address in Belgium and then it will return a 3D representation of the address using the `LIDAR` method.
 
@@ -110,7 +114,7 @@ This repository has 2 versions, namely:
 
 ______________________________________________________________________________________________________________________________________________________
 
-## Libraries Used for this Project
+## Libraries Used For This Project
 
 **IO** https://docs.python.org/3/library/io.html
   - The io module provides Python’s main facilities for dealing with various types of I/O.  
@@ -168,11 +172,16 @@ built on top of the Python programming language.
   - In this project, ZipFile is used to manipulate the DSM and DTM ZIP files.
 
 
+______________________________________________________________________________________________________________________________________________________
+
 ## Clone/Fork Repository
   - If you wish to clone/fork this repository, you can just click on the repository, then click the Clone/fork button and follow the instructions.
 
 ## Pending...
   - This code takes it's time to get the 3D representation because it is downloading the whole raster files. Currently figuring out a way to optimize it more. 
+
+
+______________________________________________________________________________________________________________________________________________________
 
   
 ![ThankYou](data/thankyou.gif)
