@@ -59,7 +59,7 @@ ________________________________________________________________________________
 This repository has 2 versions, namely: 
 
 ### Python Notebook version
-- If you want to use the notebook version to run the code, all you need is the `3D_houses.ipynb' and the `data` folder to run the code.
+- If you want to use the notebook version to run the code, all you need is the `3D_houses.ipynb` and the `data` folder to run the code.
 - To run the code, you need to input the address that you want and run all the cells to get a 3D representation of the address.
 
 ### Python File version
