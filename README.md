@@ -46,6 +46,8 @@ Here is a sample 3D representation using the code in this repository. This is th
 **Canopy Height Model (CHM)** is the height or residual distance between the ground and the top of the of objects above the ground. This includes the actual heights of trees, builds and any other objects on the earth's surface. The CHM is created by subtracting the DTM from the DSM.
 
 
+__________________________________________________________________________________________________________________________________________________
+
 
 ## Repository
 
@@ -59,7 +61,6 @@ This repository has 2 versions, namely:
 - If you want to use the python file version to run the code, you need the `program.py`, the `utils` folder and the `data` folder to run the code.
 - To run the code, you need to only run the `program.py` and enter the address that you want to get a 3D representation of the address.
 
-__________________________________________________________________________________________________________________________________________________
 
 **README.md**
   - has all the necessary information regarding the project
