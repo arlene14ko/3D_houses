@@ -175,6 +175,7 @@ built on top of the Python programming language.
   - This code takes it's time to get the 3D representation because it is downloading the whole raster files. Currently figuring out a way to optimize it more. 
 
   
+![ThankYou](data/thankyou.gif)
 ### Thank you for reading. Have fun with the code!
 
-
+![Bye](data/bye.gif)
