@@ -64,6 +64,9 @@ ________________________________________________________________________________
 **README.md**
   - has all the necessary information regarding the project
 
+**requirements.txt**
+  - this contains the list of all the libraries needed for this project
+
 **.gitignore**
   - this contains a list of files that needs to be ignored in the github for example the raster files(DSM and DTM) because they are too big (some are more than 1GB), that way, we wont have any problem uploading the repository to Github
 
