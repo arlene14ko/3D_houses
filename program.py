@@ -37,6 +37,7 @@ Calling the GeoTiff.get_tiff with num parameter to download the necessary tiff f
 """
 
 num = GeoTiff.check_tiff(address_info['x_value'], address_info['y_value'])
+print(f"This tiff file is from this number: {num}")
 
 GeoTiff.get_tiff(num)
 masked_files = GeoTiff.mask_tiff(num, polygon)

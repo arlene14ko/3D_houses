@@ -6,6 +6,7 @@ from zipfile import ZipFile
 import rasterio as rt
 from rasterio.mask import mask
 import shutil
+from Typing import List, Dict
 
 class GeoTiff:
     """
@@ -67,7 +68,7 @@ class GeoTiff:
         print("Successfully extracted the tiff files!")
     
     
-    def mask_tiff(num: str, polygon):
+    def mask_tiff(num: str, polygon: Dict[str, str]) -> Dict[str,str]:
         """
         mask_tiff function will create the masked files for the DSM and DTM
         it requires the num and polygon as the parameter
@@ -98,14 +99,14 @@ class GeoTiff:
                 dest.write(out_img)
                 print(f"Successfully created a new masked file for {name}.")
                 masked_files[f'{name}'] = f"./data/masked-files/{name}_masked.tif"
-                shutil.rmtree(f"./data/temp-raster/{name}", ignore_errors=True)
+                shutil.rmtree(f"./data/temp-raster/{name}/", ignore_errors=True)
                 print(f"Successfully deleted the files inside the temp-raster folder for {name}")
 
 
         return masked_files
             
     
-    def get_chm(masked_files):
+    def get_chm(masked_files: Dict[str,str]):
         """
         get_chm function will get the CHM from the dsm and dtm
         It requires the masked_files as the parameter and returns the CHM
