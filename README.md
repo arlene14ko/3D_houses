@@ -31,7 +31,8 @@ This is a project about searching an address in Belgium and then it will return 
 
 `Digital Surface Map (DSM)` and `Digital Terrain Map (DTM)` are already computed and available from www.geopunt.be. We just incorporated it to code to be able to plot the certain address that you wanted to plot. 
 
-Here is a sample 3D representation using the code in this repository. This is the Het Steen in Antwerp, Belgium. ![HetSteen3Drepresentation](data/3D-images/hetsteen.png)
+Here is a sample 3D representation using the code in this repository. This is the Het Steen in Antwerp, Belgium. 
+![HetSteen3Drepresentation](data/3D-images/hetsteen.png)
 
 ### Definition
 
