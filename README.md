@@ -112,14 +112,14 @@ ________________________________________________________________________________
 
 ## Libraries Used for this Project
 
-** Plotly **
-	- Plotly allows users to import, copy and paste, or stream data to be analyzed and visualized.
-	- In this project, plotly is used to successfully plot the 3D version of the address
 
+**Plotly**
+  - Plotly allows users to import, copy and paste, or stream data to be analyzed and visualized.
+  - In this project, plotly is used to successfully plot the 3D version of the address
 
-** Time **
-	- Time module handles time-related tasks.
-	- In this project, time is used to calculate the total time the code runs
+**Time**
+  - Time module handles time-related tasks.
+  - In this project, time is used to calculate the total time the code runs
 
 
 ** Shapely **
