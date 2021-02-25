@@ -33,9 +33,7 @@ This is a project about searching an address in Belgium and then it will return 
 
 Here is a sample 3D representation using the code in this repository. This is the Het Steen in Antwerp, Belgium. 
 
-	Address: Steenplein 1, 2000 Antwerpen
-
-![HetSteen3Drepresentation](data/3D-images/hetsteen.png)
+	Address: Steenplein 1, 2000 Antwerpen      	![HetSteen3Drepresentation](data/3D-images/hetsteen.png)
 
 ### Definition
 
