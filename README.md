@@ -27,6 +27,8 @@ This is a project about searching an address in Vlaanderen and then it will retu
 
 `Digital Surface Map (DSM)` and `Digital Terrain Map (DTM)` are already computed and available from www.geopunt.be. We just incorporated it to the python code to be able to plot a certain address and then get the 3D representation of that address.
 
+![HetSteen3Drepresentation](data/hetsteen.png)
+
 ### Definitions
 
 `LIDAR` is a method to measure distance using light. The device will illuminate a target with a laser light and a sensor will measure the reflection. Differences in wavelenght and return times will be used to get the 3D representations of an area. 
