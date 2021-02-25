@@ -181,10 +181,8 @@ ________________________________________________________________________________
   - This code takes it's time to get the 3D representation because it is downloading the whole raster files. Currently figuring out a way to optimize it more. 
 
 
-______________________________________________________________________________________________________________________________________________________
-
   
-![ThankYou](data/thankyou.gif)
+![ThankYou](data/thankyou.gif) ![Bye](data/bye.gif)
 ### Thank you for reading. Have fun with the code!
 
-![Bye](data/bye.gif)
+
