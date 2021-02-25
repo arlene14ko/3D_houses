@@ -112,36 +112,61 @@ ________________________________________________________________________________
 
 ## Libraries Used for this Project
 
+**IO**
+  - The io module provides Python’s main facilities for dealing with various types of I/O.  
+  - In this project, BytesIO is used to put the Zip file in-memory binary objects.
+
+
+ **Pandas**
+  - Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
+built on top of the Python programming language.
+  - In this project, pandas is used to read the bbox.csv as a dataframe.
+
 
 **Plotly**
   - Plotly allows users to import, copy and paste, or stream data to be analyzed and visualized.
-  - In this project, plotly is used to successfully plot the 3D version of the address
+  - In this project, plotly is used to successfully plot the 3D version of the address.
+
+
+**Rasterio**
+  - Rasterio reads and writes geospatial raster data. 
+  - In this project, rasterio is used to read the raster files and rasterio.mask is also used to create the masked tiff files.
+
+
+**Requests**
+  - Requests library is the de facto standard for making HTTP requests in Python. 
+  - In this project, requests is used to make requests_get from an API to get the addresses' details
+
+
+**Shapely**
+  - Shapely is a BSD-licensed Python package for manipulation and analysis of planar geometric objects.
+  - In this project, Polygon is imported from Shapely.geometry to get the geometry polygon of the address.
+
+
+**Shutil**
+  - Shutil module offers a number of high-level operations on files and collections of files.
+  - In this project, shutil is used to remove/delete the downloaded raster files to save memory and storage.
+
 
 **Time**
   - Time module handles time-related tasks.
-  - In this project, time is used to calculate the total time the code runs
+  - In this project, time is used to calculate the total time the code runs.
 
 
-** Shapely **
-	- Shapely is a BSD-licensed Python package for manipulation and analysis of planar geometric objects.
-	- In this project, Polygon was imported from Shapely.geometry to get the geometry polygon of the address
+**Typing**
+  - Typing defines a standard notation for Python function and variable type annotations.
+  - In this project, typing is used to help document the code properly.
 
 
-** Requests **
-	- Requests library is the de facto standard for making HTTP requests in Python. 
-	- In this project, requests was used to make requests_get from an API to get the addresses' details
+**Urllib**
+  - Urllib module is the URL handling module for python, it is used to fetch URLs (Uniform Resource Locators). 
+  - In this project, urlopen function is used to fetch and read the URLs.
 
 
+**Zipfile**
+  - The zipfile module can be used to manipulate ZIP archive files.
+  - In this project, ZipFile is used to manipulate the DSM and DTM ZIP files.
 
-from Typing import List, Dict
-import pandas as pd
-from io import BytesIO
-from urllib.request import urlopen
-from zipfile import ZipFile
-import rasterio as rt
-from rasterio.mask import mask
-import shutil
-from Typing import List, Dict
 
 ## Clone/Fork Repository
   - If you wish to clone/fork this repository, you can just click on the repository, then click the Clone/fork button and follow the instructions.
