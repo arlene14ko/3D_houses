@@ -27,7 +27,11 @@ This is a project about searching an address in Vlaanderen and then it will retu
 
 *Digital Surface Map (DSM) and Digital Terrain Map (DTM) are already computed and available from geopunt.be. We just incorporated it to code to be able to plot a certain address that you wanted to plot. 
 
+<<<<<<< HEAD
 *`LIDAR` is a method to measure distance using light. The device will illuminate a target with a laser light and a sensor will measure the reflection. Differences in wavelenght and return times will be used to get the 3D representations of an area. 
+=======
+![HetSteen3Drepresentation](data/3D-images/hetsteen.png)
+>>>>>>> 6c20d87c84dc8bcf1a8c622af1395e1551a19f53
 
 *`Digital Surface Model (DSM)` includes ground surface, vegetation and man-made objects. DSM demonstrate the natural and artificial features on the Earth’s surface. DSM may be useful for RF planning, landscape modelling, city modelling, visualization applications and more.
 
@@ -36,8 +40,17 @@ This is a project about searching an address in Vlaanderen and then it will retu
 
 ### Repository
 
+<<<<<<< HEAD
 **README.md**
   - has all the necessary information regarding the project
+=======
+`Canopy Height Model (CHM)` is the height or residual distance between the ground and the top of the of objects above the ground. This includes the actual heights of trees, builds and any other objects on the earth's surface. The CHM is created by subtracting the DTM from the DSM.
+
+
+## Repository
+ 
+ This repository has 2 versions namely:
+>>>>>>> 6c20d87c84dc8bcf1a8c622af1395e1551a19f53
 
 ### Python Notebook version
 - If you want to use the notebook version to run the code, all you need is the `3D_houses.ipynb' and the `data` folder to run the code.
