@@ -115,15 +115,23 @@ ________________________________________________________________________________
 ** Plotly **
 	- Plotly allows users to import, copy and paste, or stream data to be analyzed and visualized.
 	- In this project, plotly is used to successfully plot the 3D version of the address
+
+
 ** Time **
 	- Time module handles time-related tasks.
 	- In this project, time is used to calculate the total time the code runs
+
+
 ** Shapely **
 	- Shapely is a BSD-licensed Python package for manipulation and analysis of planar geometric objects.
 	- In this project, Polygon was imported from Shapely.geometry to get the geometry polygon of the address
+
+
 ** Requests **
 	- Requests library is the de facto standard for making HTTP requests in Python. 
 	- In this project, requests was used to make requests_get from an API to get the addresses' details
+
+
 
 from Typing import List, Dict
 import pandas as pd
