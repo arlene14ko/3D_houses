@@ -41,11 +41,11 @@ This is a project about searching an address in Vlaanderen and then it will retu
  This repository has 2 versions namely:
 
 ### Python Notebook version
-- If you want to use the notebook version to run the code, all you need is the `3D_houses.ipynb' and the `data` folder to run the code.
+- If you want to use the notebook version to run the code, all you need is the **3D_houses.ipynb** and the **data** folder to run the code.
 - To run the code, you need to input the address that you want and run all the cells to get a 3D representation of the address.
 
 ### Python File version
-- If you want to use the python file version to run the code, you need the `program.py`, the `utils` folder and the `data` folder to run the code.
+- If you want to use the python file version to run the code, you need the **program.py**, the **utils** folder and the **data** folder to run the code.
 - To run the code, you need to only run the `program.py` and enter the address that you want to get a 3D representation of the address.
 
 
@@ -69,7 +69,7 @@ This is a project about searching an address in Vlaanderen and then it will retu
   - this has 2 files namely:
       1. **api.py**
           - this is where all the API requests are
-	  - this is where we send the requests to the API to get the details of the address like the coordinates and the polygon
+          - this is where we send the requests to the API to get the details of the address like the coordinates and the polygon
 
       2. **geotiff.py**
           - this contains all the functions regarding the geotiff files
