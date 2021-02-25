@@ -27,7 +27,7 @@ This is a project about searching an address in Vlaanderen and then it will retu
 
 `Digital Surface Map (DSM)` and `Digital Terrain Map (DTM)` are already computed and available from www.geopunt.be. We just incorporated it to the python code to be able to plot a certain address and then get the 3D representation of that address.
 
-![HetSteen3Drepresentation](data/hetsteen.png)
+![HetSteen3Drepresentation](data/3D-images/hetsteen.png)
 
 ### Definitions
 
