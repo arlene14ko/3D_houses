@@ -4,3 +4,5 @@ data/temp-raster/DTM/
 .ipynb_checkpoints
 .gitignore
 utils/__pycache__
+3D_houses_project.ipynb
+.idea/
