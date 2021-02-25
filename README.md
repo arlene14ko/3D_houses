@@ -11,10 +11,10 @@
 - Coding Bootcamp: `Becode  Artificial Intelligence (AI) Bootcamp`
 
 
-## Mission Objectives
+### Mission Objectives
 - Consolidate the knowledge in Python specifically in `Numpy, Pandas` and `Matplotlib`
 
-## Learning Objectives
+### Learning Objectives
 - Learn how to search and implement new libraries
 - Learn how to read and use shapefiles
 - Learn how to read and use geoTIFFs
