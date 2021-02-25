@@ -37,13 +37,12 @@ Calling the GeoTiff.get_tiff with num parameter to download the necessary tiff f
 """
 
 num = GeoTiff.check_tiff(address_info['x_value'], address_info['y_value'])
-print(f"num: {num}")
 
 GeoTiff.get_tiff(num)
 masked_files = GeoTiff.mask_tiff(num, polygon)
-print(masked_files)
+print(f"Successfully created the masked files! {masked_files}")
 chm = GeoTiff.get_chm(masked_files)
-print(chm)
+print(f"Successfully created the CHM file for {address}")
 
 """ 
 :attrib fig will be the figure of the CHM in 3D, it will also show the 3D and write the save the png of the figure 

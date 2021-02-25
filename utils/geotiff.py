@@ -64,7 +64,7 @@ class GeoTiff:
                     zfile.extractall(f'./data/temp-raster/{key}')
                     print(f"Done extracting the {key} zip file to temp-raster/{key} folder!")
         
-        return("Successfully extracted the tiff files!")
+        print("Successfully extracted the tiff files!")
     
     
     def mask_tiff(num: str, polygon: Dict[str,str]) -> Dict[str, str]:
@@ -96,11 +96,10 @@ class GeoTiff:
 
             with rt.open(f"./data/masked-files/{name}_masked.tif", "w", **out_meta) as dest:
                 dest.write(out_img)
-                print("writing to a new masked tiff")
+                print(f"Successfully created a new masked file for {name}.")
                 masked_files[f'{name}'] = f"./data/masked-files/{name}_masked.tif"
-                print("created the masked files")
                 shutil.rmtree(f"./data/temp-raster/{name}", ignore_errors=True)
-                print(f"deleted the files inside the temp-raster folder for {name}")
+                print(f"Successfully deleted the files inside the temp-raster folder for {name}")
 
 
         return masked_files
@@ -117,11 +116,14 @@ class GeoTiff:
         :attrib chm contains the CHM array
         """
         dsm_tiff = rt.open(masked_files['DSM'])
+        print("Reading the 1st band of the DSM as an array")
         dsm_array = dsm_tiff.read(1)
 
         dtm_tiff = rt.open(masked_files['DTM'])
+        print("Reading the 1st band of the DSM as an array")
         dtm_array = dtm_tiff.read(1)
 
+        print("Creating the CHM file for this address.")
         chm = dsm_array - dtm_array
 
         return chm
