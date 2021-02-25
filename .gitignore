@@ -1,5 +1,6 @@
 .gitignore
-data/raster-files/
-data/temp-raster/
+data/temp-raster/DSM/
+data/temp-raster/DTM/
 .ipynb_checkpoints
 .gitignore
+utils/__pycache__
