@@ -38,7 +38,6 @@ Here is a sample 3D representation using the code in this repository. This is th
 
 ### Definition
 
-![DTM-DSM-CHM](data/DEM_DSM_CHM.png)
 
 **LIDAR** is a method to measure distance using light. The device will illuminate a target with a laser light and a sensor will measure the reflection. Differences in wavelenght and return times will be used to get the 3D representations of an area. 
 
@@ -47,6 +46,9 @@ Here is a sample 3D representation using the code in this repository. This is th
 **Digital Terrain Model (DTM)** is often required for flood or ground rupture modeling, land-use studies, geological analysis DSM demonstrate the natural and artificial features on the Earth’s surface.
 
 **Canopy Height Model (CHM)** is the height or residual distance between the ground and the top of the of objects above the ground. This includes the actual heights of trees, builds and any other objects on the earth's surface. The CHM is created by subtracting the DTM from the DSM.
+
+
+![DTM-DSM-CHM](data/DEM_DSM_CHM.png)
 
 
 __________________________________________________________________________________________________________________________________________________
