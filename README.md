@@ -37,6 +37,8 @@ This is a project about searching an address in Vlaanderen and then it will retu
 
 `Digital Terrain Model (DTM)` is often required for flood or ground rupture modeling, land-use studies, geological analysis DSM demonstrate the natural and artificial features on the Earth’s surface.
 
+`Canopy Height Model (CHM)` is the height or residual distance between the ground and the top of the of objects above the ground. This includes the actual heights of trees, builds and any other objects on the earth's surface. The CHM is created by subtracting the DTM from the DSM.
+
 
 ## Repository
  
